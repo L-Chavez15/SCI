@@ -37,6 +37,7 @@ namespace SistemaContraIncendios
                             Piso1();
                             break;
                         case 2:
+                            Piso2();
                             break;
                         case 3:
                             break;
@@ -82,12 +83,17 @@ namespace SistemaContraIncendios
             Console.WriteLine("\t║\t\t\t\t\t║");
             Console.WriteLine("\t║\t\t\t\t\t║");
             Console.WriteLine("\t╚═══════════════════════════════════════╝\n");
-            Console.Clear();
         }
         static void Piso1()
         {
             Class1 n1 = new Class1();
             n1.Seleccion();
+            Console.ReadKey();
+        }
+        static void Piso2()
+        {
+            Piso2 n2= new Piso2();
+            n2.Seleccion();
             Console.ReadKey();
         }
     }
