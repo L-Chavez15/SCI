@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaContraIncendios", "SistemaContraIncendios\SistemaContraIncendios.csproj", "{BA27BEF5-FC2E-45A9-B470-66B60B8818E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiBiblioteca", "MiBiblioteca\MiBiblioteca.csproj", "{A467746F-9D8B-4E60-8056-415D40A3B675}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA27BEF5-FC2E-45A9-B470-66B60B8818E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA27BEF5-FC2E-45A9-B470-66B60B8818E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA27BEF5-FC2E-45A9-B470-66B60B8818E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A467746F-9D8B-4E60-8056-415D40A3B675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A467746F-9D8B-4E60-8056-415D40A3B675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A467746F-9D8B-4E60-8056-415D40A3B675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A467746F-9D8B-4E60-8056-415D40A3B675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
