@@ -13,6 +13,7 @@ namespace SistemaContraIncendios
        
         static void Main(string[] args)
         {
+            Console.Clear();
             MenuPrincipal();
             Console.ReadKey();
         }

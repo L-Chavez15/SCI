@@ -1,8 +1,11 @@
 ﻿using System;
 using System.CodeDom;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MiBiblioteca
@@ -17,7 +20,6 @@ namespace MiBiblioteca
             int op;
             do
             {
-                Console.Clear();
                 Piso1();
                 Console.ForegroundColor= ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
@@ -33,7 +35,7 @@ namespace MiBiblioteca
                 Console.WriteLine("SELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
                 MostrarDatos(op);
-                Console.ReadLine();
+                Console.Clear();
                 Console.ReadKey();
             }
             while (op!=0);
@@ -71,13 +73,15 @@ namespace MiBiblioteca
             Console.WriteLine("\t║                                                                                                         ║");
             Console.WriteLine("\t╚═════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
             Console.ResetColor();
-            Console.ReadLine();
         }
         internal void MostrarDatos(int op)
         {
             Console.Clear();
             switch (op)
             {
+                case 0:
+                    Console.WriteLine("SALIENDO ...");
+                    break;
                 case 1:
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\t\t\t\t\t*****TEMPERATURA GENERAL*****\n");
@@ -134,7 +138,7 @@ namespace MiBiblioteca
             Random r1 = new Random();
             humo = r1.Next(0, 51);
 
-            if (humo < 30)
+            if (tem >57)
             {
                 Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
                 Console.WriteLine("\t\t║                        ║                        ║                            ║");
@@ -143,7 +147,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╣");
                 Console.WriteLine("\t\t║                        ║                        ║                            ║");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[1] + "\t  ║\t  " + n1[1] + "\t       ║");
+                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[0] + "\t  ║\t  " + n1[0] + "\t       ║");
                 Console.ResetColor();
                 Console.WriteLine("\t\t║                        ║                        ║                            ║");
                 Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
@@ -151,23 +155,7 @@ namespace MiBiblioteca
                 Evacuacón(tem, humo);
 
             }
-            else if (humo >= 30 && humo < 50)
-            {
-                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╣");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[0] + "\t  ║\t  " + n1[0] + "\t       ║");
-                Console.ResetColor();
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
-                Console.ResetColor();
-                Evacuacón(tem, humo);
-            }
-            else
+            else if (tem>30 & tem<57 )
             {
                 Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
                 Console.WriteLine("\t\t║                        ║                        ║                            ║");
@@ -182,19 +170,37 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
                 Evacuacón(tem, humo);
-
             }
-            Console.ReadKey();
+            else
+            {
+                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║");
+                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║");
+                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╣");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[1] + "\t  ║\t  " + n1[1] + "\t       ║");
+                Console.ResetColor();
+                Console.WriteLine("\t\t║                        ║                        ║                            ║");
+                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
+                Console.ResetColor();
+                Evacuacón(tem, humo);
+            }
         }
         public void Evacuacón(float temp, float humo)
         {
-            if (temp > 80 || humo > 70)
+            if (temp > 57 )
             {
+                SoundPlayer sonido = new SoundPlayer("ALARMA.wav");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\t\t\t\t\t¡EVACUAR INMEDIATAMENTE!");
                 Console.WriteLine("\t\t\t\t\t LLAMANDO A EMERGENCIAS");
+                sonido.Play();
+                Thread.Sleep(20000);
+                sonido.Stop();
             }
-            else if (temp > 70 || humo > 50)
+            else if (temp > 40)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("\t\t\t¡Posible incendio! Verificar área");
@@ -208,8 +214,8 @@ namespace MiBiblioteca
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\t\t\t\tNO HAY NINGUN RASTRO DE INCENDIOS");
+                Console.ResetColor();
             }
-            Console.ResetColor();
         }
 
     }
