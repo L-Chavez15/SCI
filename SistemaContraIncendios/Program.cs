@@ -96,5 +96,11 @@ namespace SistemaContraIncendios
             n2.Seleccion();
             Console.ReadKey();
         }
+        static void Piso3()
+        {
+            Piso3 n3= new Piso3();
+            n3.Seleccion();
+            Console.ReadKey();
+        }
     }
 }
