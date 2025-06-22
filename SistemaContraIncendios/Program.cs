@@ -56,8 +56,6 @@ namespace SistemaContraIncendios
                 Console.WriteLine("\t╚═══════════════════════════════════════╝\n");
                 Console.ResetColor();
                 string opcion;
-                Console.WriteLine("INGRESE EL PISO A INSPECCIONAR:  ");
-                opcion = Console.ReadLine();
             }
         }
     }
