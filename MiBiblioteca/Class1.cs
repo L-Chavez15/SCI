@@ -17,9 +17,8 @@ namespace MiBiblioteca
             int op;
             do
             {
-
-                Piso1();
                 Console.Clear();
+                Piso1();
                 Console.ForegroundColor= ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
@@ -43,7 +42,6 @@ namespace MiBiblioteca
         }
         private void Piso1()
         {
-            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\t╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("\t║                                                                                                         ║");
@@ -77,6 +75,7 @@ namespace MiBiblioteca
         }
         internal void MostrarDatos(int op)
         {
+            Console.Clear();
             switch (op)
             {
                 case 1:
@@ -125,6 +124,7 @@ namespace MiBiblioteca
                     Console.WriteLine("INGRESE UN VALOR VALIDO");
                     break;
             }
+            Console.ReadLine();
         }
         internal void Datos()
         {
@@ -197,17 +197,17 @@ namespace MiBiblioteca
             else if (temp > 70 || humo > 50)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("¡Posible incendio! Verificar área");
+                Console.WriteLine("\t\t\t¡Posible incendio! Verificar área");
             }
             else if (temp > 50 || humo > 30)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Condiciones anormales - Monitorear");
+                Console.WriteLine("\t\t\tCondiciones anormales - Monitorear");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t\t\t NO HAY NINGUN RASTRO DE INCENDIOS");
+                Console.WriteLine("\t\t\t\tNO HAY NINGUN RASTRO DE INCENDIOS");
             }
             Console.ResetColor();
         }

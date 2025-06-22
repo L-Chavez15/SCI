@@ -21,9 +21,8 @@ namespace SistemaContraIncendios
             int piso;
             do
             {
-
-                Pisos();
                 Console.Clear();
+                Pisos();
                 Console.WriteLine("***PRECIONA 0 PARA SALIR***");
                 Console.WriteLine("SELECCIONE UN PISO: ");
                 piso = int.Parse(Console.ReadLine());
@@ -86,18 +85,21 @@ namespace SistemaContraIncendios
         }
         static void Piso1()
         {
+            Console.Clear();
             Class1 n1 = new Class1();
             n1.Seleccion();
             Console.ReadKey();
         }
         static void Piso2()
         {
+            Console.Clear();
             Piso2 n2= new Piso2();
             n2.Seleccion();
             Console.ReadKey();
         }
         static void Piso3()
         {
+            Console.Clear();
             Piso3 n3= new Piso3();
             n3.Seleccion();
             Console.ReadKey();
