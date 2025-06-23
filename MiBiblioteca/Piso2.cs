@@ -19,17 +19,17 @@ namespace MiBiblioteca
             do
             {
 
-                Piso2();
+                Piso_2();
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
                 Console.WriteLine("\n\t*1.TEMPERATURA GENERAL");
-                Console.WriteLine("\t*2.SS.HH DAMAS");
-                Console.WriteLine("\t*3.SS.HH CABALLEROS");
-                Console.WriteLine("\t*4.COMEDOR");
-                Console.WriteLine("\t*5.SECCIÓN A");
-                Console.WriteLine("\t*6.SECCIÓN B");
-                Console.WriteLine("\t*7.SECCIÓN C");
+                Console.WriteLine("\t*2.OFICINA 1");
+                Console.WriteLine("\t*3.OFICINA 2");
+                Console.WriteLine("\t*4.OFICINA 3");
+                Console.WriteLine("\t*5.OFICINA 4");
+                Console.WriteLine("\t*6.SALA DE REUNION");
+                Console.WriteLine("\t*7.ALMACEN");
                 Console.WriteLine("\t*0.SALIR");
                 Console.WriteLine("SELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
@@ -41,36 +41,29 @@ namespace MiBiblioteca
 
 
         }
-        private void Piso2()
+        private void Piso_2()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\t╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("\t║                                                                                                         ║");
-            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗   ╔═══════════════════════════════════════════════════╗   ║");
-            Console.WriteLine("\t║   ║                     |                   ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║      SS.HH          |      SS.HH        ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║      DAMAS          |    CABALLEROS     ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║     (SENSOR 2)      |     SENSOR 3)     ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║                     |                   ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╚════════  ═════════════════════  ════════╝   ║                                                   ║   ║");
-            Console.WriteLine("\t║                                               S ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗ E ║                       COMEDOR                     ║   ║");
-            Console.WriteLine("\t║   ║                                         ║ N ║                      (SENSOR 4)                   ║   ║");
-            Console.WriteLine("\t║   ║                SECCIÓN A                ║ S ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║               (SENSOR 5)                ║ O ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║                                         ║ R ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╚═════════════════════════════════════════╝   ║                                                   ║   ║");
-            Console.WriteLine("\t║                                               1 ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗   ╚═════════════════════════    ══════════════════════╝   ║");
-            Console.WriteLine("\t║   ║                                         ║                                                           ║");
-            Console.WriteLine("\t║   ║             SECCIÓN B                   ║   ╔═══════════════════════════════════════════════════╗   ║");
-            Console.WriteLine("\t║   ║             (SENSOR 6)                  ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╚═════════════════════════════════════════╝   ║                SECCIÓN C                          ║   ║");
-            Console.WriteLine("\t║                                                 ║                (SENSOR 7)                         ║   ║");
-            Console.WriteLine("\t║                                                 ║                                                   ║   ║");
-            Console.WriteLine("\t║                                                 ╚═══════════════════════════════════════════════════╝   ║");
-            Console.WriteLine("\t║                                                                                                         ║");
-            Console.WriteLine("\t╚═════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
+            Console.WriteLine("╔═══════════════════════╦════╦═══════════════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║ OFICINA 1-SENSOR 1    ║    ║   SALA DE REUNION - SENSOR 2                                              ║");
+            Console.WriteLine("║                       ║    ║                                                                           ║");
+            Console.WriteLine("║                       ║    ║                       --O-------O-----------O--------O--                  ║");
+            Console.WriteLine("║         ______        ║    ║                     O|                                  |O                ║");
+            Console.WriteLine("║       O|      |O      ║    ║                      |                                  |                 ║");
+            Console.WriteLine("║        |      |            ║                     O|__________________________________|O                ║");
+            Console.WriteLine("║       O|______|O           ║                         O       O           O        O                    ║");
+            Console.WriteLine("╠═══════════════════════╝    ║                                                                           ║");
+            Console.WriteLine("║                            ╚═   ═══════════════════════════════════════════════════════════════════════╣");
+            Console.WriteLine("║                                                                                                        ║");
+            Console.WriteLine("╠═══════════════════╗                                             ╔════════════════  ═╦  ════════════════╣");
+            Console.WriteLine("║     OFICINA 2     ║   ╔══════════════════════════   ════════════╣                   ║                  ║");
+            Console.WriteLine("║     (SENSOR 3)    ║   ║                                         ║                   ║                  ║");
+            Console.WriteLine("║      ______       ║   ║                                         ║    OFICINA 3      ║   OFICINA 4      ║");
+            Console.WriteLine("║     |      |      ║   ║         ALMACEN / (SENSOR 4)            ║    (SENSOR 5)     ║   (SENSOR 6)     ║");
+            Console.WriteLine("║    O|      |      ║   ║                                         ║                   ║                  ║");
+            Console.WriteLine("║     |______|      ║   ║                                         ║                   ║                  ║");
+            Console.WriteLine("╚═══════════════════╩═══╩═════════════════════════════════════════╩═══════════════════╩══════════════════╝");
+
             Console.ResetColor();
         }
         internal void MostrarDatos(int op)
@@ -78,45 +71,42 @@ namespace MiBiblioteca
             Console.Clear();
             switch (op)
             {
+                case 0: 
+                    Console.WriteLine("*****ADIOS*****");
+                    break;
                 case 1:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****TEMPERATURA GENERAL*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 1*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 2:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 2*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 3:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 3*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 4:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 4*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 5:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t*****ALMACEN*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 6:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
-                    Console.ResetColor();
-                    Datos();
-                    break;
-                case 7:
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t*****SALA DE REUNION*****\n");
                     Console.ResetColor();
                     Datos();
                     break;

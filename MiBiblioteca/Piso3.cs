@@ -19,7 +19,7 @@ namespace MiBiblioteca
             do
             {
 
-                Piso3();
+                Piso_3();
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
@@ -41,7 +41,7 @@ namespace MiBiblioteca
 
 
         }
-        private void Piso3()
+        private void Piso_3()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\t╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗");

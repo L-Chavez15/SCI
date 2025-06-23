@@ -24,7 +24,9 @@ namespace SistemaContraIncendios
             {
                 Console.Clear();
                 Pisos();
-                Console.WriteLine("***PRECIONA 0 PARA SALIR***");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("\t\t***PRECIONA 0 PARA SALIR***\n");
+                Console.ResetColor();
                 Console.WriteLine("SELECCIONE UN PISO: ");
                 piso = int.Parse(Console.ReadLine());
 
@@ -52,6 +54,11 @@ namespace SistemaContraIncendios
         static void Pisos()
         {
             string[] Pisos = { "Piso 1", "Piso 2", "Piso3" };
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("\t========================================");
+            Console.WriteLine("\t\t SISTEMA CONTRA INCENDIO");
+            Console.WriteLine("\t========================================\n");
+
             Console.WriteLine("\t╔═══════════════════════════════════════╗");
             Console.WriteLine("\t║\t\t\t\t\t║");
             Console.WriteLine("\t║\t\t\t\t\t║");
@@ -83,6 +90,7 @@ namespace SistemaContraIncendios
             Console.WriteLine("\t║\t\t\t\t\t║");
             Console.WriteLine("\t║\t\t\t\t\t║");
             Console.WriteLine("\t╚═══════════════════════════════════════╝\n");
+            Console.ResetColor();
         }
         static void Piso1()
         {

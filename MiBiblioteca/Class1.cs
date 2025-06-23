@@ -25,14 +25,14 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
                 Console.WriteLine("\n\t*1.TEMPERATURA GENERAL");
-                Console.WriteLine("\t*2.SS.HH DAMAS");
-                Console.WriteLine("\t*3.SS.HH CABALLEROS");
-                Console.WriteLine("\t*4.COMEDOR");
-                Console.WriteLine("\t*5.SECCIÓN A");
-                Console.WriteLine("\t*6.SECCIÓN B");
-                Console.WriteLine("\t*7.SECCIÓN C");
-                Console.WriteLine("\t*0.SALIR");
-                Console.WriteLine("SELECCIONE UNA OPCIÓN: ");
+                Console.WriteLine("\t*2.SECCIÓN A");
+                Console.WriteLine("\t*3.SECCIÓN B");
+                Console.WriteLine("\t*4.ALMACEN PRINCIPAL");
+                Console.WriteLine("\t*5.SECCIÓN C");
+                Console.WriteLine("\t*6.SECCIÓN D");
+                Console.WriteLine("\t*7.SECCIÓN E");
+                Console.WriteLine("\t*0.SALIR\n");
+                Console.WriteLine("\tSELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
                 MostrarDatos(op);
                 Console.Clear();
@@ -46,30 +46,28 @@ namespace MiBiblioteca
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\t╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("\t║                                                                                                         ║");
-            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗   ╔═══════════════════════════════════════════════════╗   ║");
-            Console.WriteLine("\t║   ║                     |                   ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║      SS.HH          |      SS.HH        ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║      DAMAS          |    CABALLEROS     ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║     (SENSOR 2)      |     SENSOR 3)     ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║                     |                   ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╚════════  ═════════════════════  ════════╝   ║                                                   ║   ║");
+            Console.WriteLine("\t║                        |                  ║                                                             ║");
+            Console.WriteLine("\t║                        |                  ║     ╔═══════════════════════════════════════════════════╗   ║");
+            Console.WriteLine("\t║        SECCIÓN A       |     SECCIÓN B    ║     ║                                                   ║   ║");
+            Console.WriteLine("\t║        (SENSOR 2)      |    (SENSOR 3)    ║     ║                                                   ║   ║");
+            Console.WriteLine("\t║                        |                  ║     ║                                                   ║   ║");
+            Console.WriteLine("\t║                        |                  ║     ║                                                   ║   ║");
+            Console.WriteLine("\t║                        |                  ║     ║                                                   ║   ║");
+            Console.WriteLine("\t╠══════════  ═════════════════════  ════════╝     ║                                                   ║   ║");
             Console.WriteLine("\t║                                               S ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗ E ║                       COMEDOR                     ║   ║");
+            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗ E ║                   ALMACEN PRINCIPAL               ║   ║");
             Console.WriteLine("\t║   ║                                         ║ N ║                      (SENSOR 4)                   ║   ║");
-            Console.WriteLine("\t║   ║                SECCIÓN A                ║ S ║                                                   ║   ║");
+            Console.WriteLine("\t║   ║                SECCIÓN C                ║ S ║                                                   ║   ║");
             Console.WriteLine("\t║   ║               (SENSOR 5)                ║ O ║                                                   ║   ║");
             Console.WriteLine("\t║   ║                                         ║ R ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╚═════════════════════════════════════════╝   ║                                                   ║   ║");
-            Console.WriteLine("\t║                                               1 ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗   ╚═════════════════════════    ══════════════════════╝   ║");
-            Console.WriteLine("\t║   ║                                         ║                                                           ║");
-            Console.WriteLine("\t║   ║             SECCIÓN B                   ║   ╔═══════════════════════════════════════════════════╗   ║");
+            Console.WriteLine("\t║   ╚═════════════════   ═════════════════════╝   ╚═════════════════════════    ══════════════════════╝   ║");
+            Console.WriteLine("\t║                                               1                                                         ║");
+            Console.WriteLine("\t║   ╔═════════════════════════════════════════╗   ╔═══════════════════════════════════════════════════╗   ║");
+            Console.WriteLine("\t║   ║                                         ║   ║                                                   ║   ║");
+            Console.WriteLine("\t║   ║             SECCIÓN D                   ║   ║                  SECCIÓN E - (SENSOR 7)           ║   ║");
             Console.WriteLine("\t║   ║             (SENSOR 6)                  ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ╚═════════════════════════════════════════╝   ║                SECCIÓN C                          ║   ║");
-            Console.WriteLine("\t║                                                 ║                (SENSOR 7)                         ║   ║");
-            Console.WriteLine("\t║                                                 ║                                                   ║   ║");
-            Console.WriteLine("\t║                                                 ╚═══════════════════════════════════════════════════╝   ║");
+            Console.WriteLine("\t║   ╚═════════════════════════════════════════╝   ╚═════════════════════════    ══════════════════════    ║");
+            Console.WriteLine("\t║                                                                                                         ║");
             Console.WriteLine("\t║                                                                                                         ║");
             Console.WriteLine("\t╚═════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
             Console.ResetColor();
@@ -194,8 +192,8 @@ namespace MiBiblioteca
             {
                 SoundPlayer sonido = new SoundPlayer("ALARMA.wav");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\t\t\t\t\t¡EVACUAR INMEDIATAMENTE!");
-                Console.WriteLine("\t\t\t\t\t LLAMANDO A EMERGENCIAS");
+                Console.WriteLine("\t\t\t\t\t   ¡EVACUAR INMEDIATAMENTE!\n");
+                Console.WriteLine("\t\t\t\t\t    LLAMANDO A EMERGENCIAS");
                 sonido.Play();
                 Thread.Sleep(20000);
                 sonido.Stop();
@@ -203,17 +201,17 @@ namespace MiBiblioteca
             else if (temp > 40)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("\t\t\t¡Posible incendio! Verificar área");
+                Console.WriteLine("\t\t\t\t ¡Posible incendio! Verificar área");
             }
             else if (temp > 50 || humo > 30)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\t\t\tCondiciones anormales - Monitorear");
+                Console.WriteLine("\t\t\t   Condiciones anormales - Monitorear");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t\t\t\tNO HAY NINGUN RASTRO DE INCENDIOS");
+                Console.WriteLine("\t\t\t\t\t   NO HAY NINGUN RASTRO DE INCENDIOS");
                 Console.ResetColor();
             }
         }
