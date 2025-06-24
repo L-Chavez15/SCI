@@ -151,7 +151,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
                 Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
-                Evacuacón(tem, humo);
+                Evacuación(tem, humo);
             }
             else if (tem>30 & tem<57 )
             {
@@ -168,7 +168,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
                 Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
-                Evacuacón(tem, humo);
+                Evacuación(tem, humo);
             }
             else
             {
@@ -185,10 +185,10 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
                 Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
-                Evacuacón(tem, humo);
+                Evacuación(tem, humo);
             }
         }
-        public void Evacuacón(float temp, float humo)
+        private void Evacuación(float temp, float humo)
         {
             if (temp > 57 )
             {
@@ -216,6 +216,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t\t\t\t   NO HAY NINGUN RASTRO DE INCENDIOS");
                 Console.ResetColor();
             }
+
         }
 
     }
