@@ -20,6 +20,7 @@ namespace MiBiblioteca
             int op;
             do
             {
+                Console.Clear();
                 Piso1();
                 Console.ForegroundColor= ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
@@ -35,7 +36,6 @@ namespace MiBiblioteca
                 Console.WriteLine("\tSELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
                 MostrarDatos(op);
-                Console.Clear();
                 Console.ReadKey();
             }
             while (op!=0);
@@ -138,50 +138,52 @@ namespace MiBiblioteca
 
             if (tem >57)
             {
-                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╣");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
+                Console.Clear();
+                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╦════════════════════════════╗");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO    ║");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[0] + "\t  ║\t  " + n1[0] + "\t       ║");
+                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[0] + "\t  ║\t  " + n1[0] + "\t       ║\t  " + n1[0] + "\t     ║");
                 Console.ResetColor();
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
                 Evacuacón(tem, humo);
-
             }
             else if (tem>30 & tem<57 )
             {
-                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╣");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[2] + "\t  ║\t  " + n1[2] + "\t       ║");
+                Console.Clear();
+                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╦════════════════════════════╗");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO    ║");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[2] + "\t  ║\t  " + n1[2] + "\t       ║\t  " + n1[2] + "\t     ║");
                 Console.ResetColor();
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
                 Evacuacón(tem, humo);
             }
             else
             {
-                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╗");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╣");
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[1] + "\t  ║\t  " + n1[1] + "\t       ║");
+                Console.Clear();
+                Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╦════════════════════════════╗");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO    ║");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[1] + "\t  ║\t  " + n1[1] + "\t       ║\t  " + n1[1] + "\t     ║");
                 Console.ResetColor();
-                Console.WriteLine("\t\t║                        ║                        ║                            ║");
-                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╝\n");
+                Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
+                Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
                 Console.ResetColor();
                 Evacuacón(tem, humo);
             }
@@ -195,7 +197,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t\t\t\t   ¡EVACUAR INMEDIATAMENTE!\n");
                 Console.WriteLine("\t\t\t\t\t    LLAMANDO A EMERGENCIAS");
                 sonido.Play();
-                Thread.Sleep(20000);
+                Thread.Sleep(15000);
                 sonido.Stop();
             }
             else if (temp > 40)
