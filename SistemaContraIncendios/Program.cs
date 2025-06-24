@@ -33,8 +33,13 @@ namespace SistemaContraIncendios
                     switch (piso)
                     {
                         case 0:
-                            Console.WriteLine("*****ADIOS*****");
-                            break;
+                            Console.Clear();
+                            Console.ForegroundColor= ConsoleColor.Yellow;
+                            Console.WriteLine("\t\t\t\t\t\t\t*****ADIOS*****");
+                        Console.WriteLine("\t\t\t\t\t      ***** ESPERAMOS VERTE DE NUEVO*****");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        break;
                         case 1:
                             Piso1();
                             break;
