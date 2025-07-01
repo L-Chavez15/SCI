@@ -50,7 +50,7 @@ namespace MiBiblioteca
             Console.WriteLine("\t║   ║                     |                   ║   ║                                                   ║   ║");
             Console.WriteLine("\t║   ║      SS.HH          |      SS.HH        ║   ║                                                   ║   ║");
             Console.WriteLine("\t║   ║      DAMAS          |      DAMAS        ║   ║                                                   ║   ║");
-            Console.WriteLine("\t║   ║     (SENSOR 2)      |      (SENSOR 3)   ║   ║                                                   ║   ║");
+            Console.WriteLine("\t║   ║     (SENSOR )      |      (SENSOR 3)   ║   ║                                                   ║   ║");
             Console.WriteLine("\t║   ║                     |                   ║   ║                                                   ║   ║");
             Console.WriteLine("\t║   ╚════════  ═════════════════════  ════════╝   ║                                                   ║   ║");
             Console.WriteLine("\t║                                               S ║                                                   ║   ║");
