@@ -182,8 +182,8 @@ namespace MiBiblioteca
             {
                 SoundPlayer sonido = new SoundPlayer("ALARMA.wav");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\t\t\t\t\t¡EVACUAR INMEDIATAMENTE!");
-                Console.WriteLine("\t\t\t\t\t LLAMANDO A EMERGENCIAS");
+                Console.WriteLine("\t\t\t\t\t\t :::::::¡EVACUAR INMEDIATAMENTE!:::::::");
+                Console.WriteLine("\t\t\t\t\t\t ::::::: LLAMANDO A EMERGENCIAS :::::::");
                 sonido.Play();
                 Thread.Sleep(20000);
                 sonido.Stop();
