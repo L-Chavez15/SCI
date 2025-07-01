@@ -54,7 +54,7 @@ namespace MiBiblioteca
             Console.WriteLine("║       O|______|O           ║                         O       O           O        O                    ║");
             Console.WriteLine("╠═══════════════════════╝    ║                                                                           ║");
             Console.WriteLine("║                            ╚═   ═══════════════════════════════════════════════════════════════════════╣");
-            Console.WriteLine("║                                                                                                        ║");
+            Console.WriteLine("║      SENSOR                                 SENSOR                          SENSOR                     ║");
             Console.WriteLine("╠═══════════════════╗                                             ╔════════════════  ═╦  ════════════════╣");
             Console.WriteLine("║     OFICINA 2     ║   ╔══════════════════════════   ════════════╣                   ║                  ║");
             Console.WriteLine("║     (SENSOR 3)    ║   ║                                         ║                   ║                  ║");

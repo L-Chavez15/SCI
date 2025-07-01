@@ -26,12 +26,12 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
                 Console.WriteLine("\n\t*1.TEMPERATURA GENERAL");
-                Console.WriteLine("\t*2.SECCIÓN A");
-                Console.WriteLine("\t*3.SECCIÓN B");
+                Console.WriteLine("\t*2.SECTOR A");
+                Console.WriteLine("\t*3.SECTOR B");
                 Console.WriteLine("\t*4.ALMACEN PRINCIPAL");
-                Console.WriteLine("\t*5.SECCIÓN C");
-                Console.WriteLine("\t*6.SECCIÓN D");
-                Console.WriteLine("\t*7.SECCIÓN E");
+                Console.WriteLine("\t*5.SECTOR C");
+                Console.WriteLine("\t*6.SECTOR D");
+                Console.WriteLine("\t*7.SECTOR E");
                 Console.WriteLine("\t*0.SALIR\n");
                 Console.WriteLine("\tSELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
@@ -88,37 +88,37 @@ namespace MiBiblioteca
                     break;
                 case 2:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t***** SECTOR A *****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 3:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t***** SECTOR B *****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 4:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t***** ALMACEN PRINCIPAL *****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 5:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t*****SECTOR C*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 6:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t***** SECTOR D *****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 7:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\tTEMPERATURA GENERAL");
+                    Console.WriteLine("\t\t\t\t\t***** SECTOR E *****\n");
                     Console.ResetColor();
                     Datos();
                     break;
@@ -146,7 +146,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t╠════════════════════════╬════════════════════════╬════════════════════════════╬════════════════════════════╣");
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[0] + "\t  ║\t  " + n1[0] + "\t       ║\t  " + n1[0] + "\t     ║");
+                Console.WriteLine("\t\t║\t  " + tem + "°C\t\t ║\t  " + n1[0] + "\t  ║\t  " + n1[0] + "\t       ║\t  " + n1[0] + "\t    ║");
                 Console.ResetColor();
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                            ║");
                 Console.WriteLine("\t\t╚════════════════════════╩════════════════════════╩════════════════════════════╩════════════════════════════╝\n");
