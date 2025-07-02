@@ -190,30 +190,30 @@ namespace MiBiblioteca
         }
         private void Evacuación(float temp, float humo)
         {
-            if (temp > 57 )
+            if (temp > 57)
             {
                 SoundPlayer sonido = new SoundPlayer("ALARMA.wav");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\t\t\t\t\t\t :::::::¡EVACUAR INMEDIATAMENTE!:::::::");
                 Console.WriteLine("\t\t\t\t\t\t ::::::: LLAMANDO A EMERGENCIAS :::::::");
                 sonido.Play();
-                Thread.Sleep(15000);
+                Thread.Sleep(20000);
                 sonido.Stop();
             }
             else if (temp > 40)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("\t\t\t\t\t\t ¡Posible incendio! Verificar área");
+                Console.WriteLine("\t\t\t\t\t\t :::: ¡POSIBLE INCENDIO! VERIFICAR ÁREA ::::");
             }
             else if (temp > 50 || humo > 30)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\t\t\t\t\t   Condiciones anormales - Monitorear");
+                Console.WriteLine("\t\t\t\t\t\t :::: CONDICIONES ANORMALES - MONITOREAR ::::");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t\t\t\t\t\t\t   NO HAY NINGUN RASTRO DE INCENDIOS");
+                Console.WriteLine("\t\t\t\t\t\t :::: NO HAY NINGUN RASTRO DE INCENDIOS ::::");
                 Console.ResetColor();
             }
 

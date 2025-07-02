@@ -191,17 +191,17 @@ namespace MiBiblioteca
             else if (temp > 40)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("\t\t\t¡Posible incendio! Verificar área");
+                Console.WriteLine("\t\t\t\t\t\t :::: ¡POSIBLE INCENDIO! VERIFICAR ÁREA ::::");
             }
             else if (temp > 50 || humo > 30)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\t\t\tCondiciones anormales - Monitorear");
+                Console.WriteLine("\t\t\t\t\t\t :::: CONDICIONES ANORMALES - MONITOREAR ::::");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t\t\t\tNO HAY NINGUN RASTRO DE INCENDIOS");
+                Console.WriteLine("\t\t\t\t\t\t :::: NO HAY NINGUN RASTRO DE INCENDIOS ::::");
                 Console.ResetColor();
             }
         }
