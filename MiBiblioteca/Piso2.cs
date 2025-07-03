@@ -106,13 +106,13 @@ namespace MiBiblioteca
                     break;
                 case 6:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****ALMACEN*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****SALA DE REUNION*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 7:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****SALA DE REUNION*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****ALMACEN*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
