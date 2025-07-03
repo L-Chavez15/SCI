@@ -27,7 +27,7 @@ namespace SistemaContraIncendios
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t***PRECIONA 0 PARA SALIR***\n");
                 Console.ResetColor();
-                Console.Write("SELECCIONE UN PISO: ");
+                Console.Write("\tSELECCIONE UN PISO: ");
                 piso = int.Parse(Console.ReadLine());
 
                     switch (piso)
