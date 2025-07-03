@@ -33,7 +33,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t*6.SECTOR D");
                 Console.WriteLine("\t*7.SECTOR E");
                 Console.WriteLine("\t*0.SALIR\n");
-                Console.WriteLine("\tSELECCIONE UNA OPCIÓN: ");
+                Console.Write("\tSELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
                 MostrarDatos(op);
                 Console.ReadKey();
@@ -139,7 +139,7 @@ namespace MiBiblioteca
             if (tem >57)
             {
                 Console.Clear();
-                Console.WriteLine("\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
+                Console.WriteLine("\n\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
                 Console.WriteLine("\t\t║      TEMPERATURA        ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO     ║    ");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");

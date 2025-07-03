@@ -127,7 +127,7 @@ namespace MiBiblioteca
             if (tem > 57)
             {
                 Console.Clear();
-                Console.WriteLine("\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
+                Console.WriteLine("\n\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
                 Console.WriteLine("\t\t║      TEMPERATURA        ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO     ║    ");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
@@ -137,7 +137,7 @@ namespace MiBiblioteca
                 Console.WriteLine("\t\t║\t  " + tem + "°C\t\t  ║\t  " + n1[0] + "\t   ║\t     " + n1[0] + "\t        ║\t  " + n1[0] + "\t       ║");
                 Console.ResetColor();
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
-                Console.WriteLine("\t\t╚═════════════════════════╩════════════════════════╩════════════════════════════╩═════════════════════════════╝\n"); 
+                Console.WriteLine("\t\t╚═════════════════════════╩════════════════════════╩════════════════════════════╩═════════════════════════════╝\n");
                 Console.ResetColor();
                 Evacuación(tem, humo);
             }

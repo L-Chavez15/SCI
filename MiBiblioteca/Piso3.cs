@@ -43,6 +43,7 @@ namespace MiBiblioteca
         }
         private void Piso_3()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\t╔════════════════════════╦════════════╦═══════════════╦══════════════════════════════════════════╗");
             Console.WriteLine("\t║¥                     ¥ ║            ║               ║¥¥       ZONA DE RECREACION             ¥¥║");
             Console.WriteLine("\t║    Oficina del jefe    ║ ALMACEN    ║   Oficina 2   ║            (Sensor 4)                    ║");
@@ -127,7 +128,7 @@ namespace MiBiblioteca
             if (tem > 57)
             {
                 Console.Clear();
-                Console.WriteLine("\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
+                Console.WriteLine("\n\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
                 Console.WriteLine("\t\t║      TEMPERATURA        ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO     ║    ");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
