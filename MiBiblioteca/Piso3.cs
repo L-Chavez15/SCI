@@ -23,13 +23,13 @@ namespace MiBiblioteca
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
-                Console.WriteLine("\n\t*1.TEMPERATURA GENERAL");
-                Console.WriteLine("\t*2.SS.HH DAMAS");
-                Console.WriteLine("\t*3.SS.HH CABALLEROS");
-                Console.WriteLine("\t*4.COMEDOR");
-                Console.WriteLine("\t*5.SECCIÓN A");
-                Console.WriteLine("\t*6.SECCIÓN B");
-                Console.WriteLine("\t*7.SECCIÓN C");
+                Console.WriteLine("\n\t*1.TEMPERATURA DE LOS PASILLOS");
+                Console.WriteLine("\t*2.OFICINA DEL JEFE");
+                Console.WriteLine("\t*3.ALMACEN");
+                Console.WriteLine("\t*4.OFICINA 2");
+                Console.WriteLine("\t*5.SALA DE DESCANSO");
+                Console.WriteLine("\t*6.OFICINA 3");
+                Console.WriteLine("\t*7.BAÑOS");
                 Console.WriteLine("\t*0.SALIR");
                 Console.Write("\tSELECCIONE UNA OPCIÓN: ");
                 op = int.Parse(Console.ReadLine());
@@ -45,7 +45,7 @@ namespace MiBiblioteca
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\t╔════════════════════════╦════════════╦═══════════════╦══════════════════════════════════════════╗");
-            Console.WriteLine("\t║¥                     ¥ ║            ║               ║¥¥       ZONA DE RECREACION             ¥¥║");
+            Console.WriteLine("\t║¥                     ¥ ║            ║               ║¥¥         SALA DE DESCANSO             ¥¥║");
             Console.WriteLine("\t║    Oficina del jefe    ║ ALMACEN    ║   Oficina 2   ║            (Sensor 4)                    ║");
             Console.WriteLine("\t║       (Sensor 1)       ║ PISO 3     ║   (Sensor 3)  ║              ┌──O───O───┐                ║");
             Console.WriteLine("\t║        ┌-----┐         ║ (Sensor 2) ║   ┌─O───O─┐   ║             O│          │O               ║");
@@ -100,11 +100,18 @@ namespace MiBiblioteca
                     break;
                 case 5:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****ZONA DE RECREACIÓN*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****SALA DE DESCANSO*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 6:
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 3*****\n");
+                    Console.ResetColor();
+                    Datos();
+                    break;
+                case 7:
+
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\t\t\t\t\t*****BAÑOS*****\n");
                     Console.ResetColor();
