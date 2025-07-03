@@ -127,7 +127,8 @@ namespace MiBiblioteca
             if (tem > 57)
             {
                 Console.Clear();
-                Console.WriteLine("\n\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
+                Console.WriteLine("\n");
+                Console.WriteLine("\t\t╔═════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
                 Console.WriteLine("\t\t║      TEMPERATURA        ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO     ║    ");
                 Console.WriteLine("\t\t║                         ║                        ║                            ║                             ║");
@@ -144,6 +145,7 @@ namespace MiBiblioteca
             else if (tem > 30 & tem < 57)
             {
                 Console.Clear();
+                Console.WriteLine("\n");
                 Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                             ║");
                 Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO     ║");
@@ -161,6 +163,7 @@ namespace MiBiblioteca
             else
             {
                 Console.Clear();
+                Console.WriteLine("\n");
                 Console.WriteLine("\t\t╔════════════════════════╦════════════════════════╦════════════════════════════╦═════════════════════════════╗");
                 Console.WriteLine("\t\t║                        ║                        ║                            ║                             ║");
                 Console.WriteLine("\t\t║      TEMPERATURA       ║        SENSORES        ║    LUCES ESTROBOSCÓPICAS   ║     ENERGÍA DE RESPALDO     ║");
