@@ -23,7 +23,7 @@ namespace MiBiblioteca
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\t******SELECCIONE EL LUGAR A REVISAR******\n");
                 Console.ResetColor();
-                Console.WriteLine("\n\t*1.TEMPERATURA GENERAL");
+                Console.WriteLine("\n\t*1.TEMPERATURA DE LOS PASILLOS");
                 Console.WriteLine("\t*2.OFICINA 1");
                 Console.WriteLine("\t*3.OFICINA 2");
                 Console.WriteLine("\t*4.OFICINA 3");
@@ -76,35 +76,41 @@ namespace MiBiblioteca
                     break;
                 case 1:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****OFICINA 1*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****TEMPERATURA DE LOS PASILLO*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 2:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****OFICINA 2*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 1*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 3:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****OFICINA 3*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 2*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 4:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****OFICINA 4*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 3*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 5:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\t\t\t\t\t*****ALMACEN*****\n");
+                    Console.WriteLine("\t\t\t\t\t*****OFICINA 4*****\n");
                     Console.ResetColor();
                     Datos();
                     break;
                 case 6:
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("\t\t\t\t\t*****ALMACEN*****\n");
+                    Console.ResetColor();
+                    Datos();
+                    break;
+                case 7:
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\t\t\t\t\t*****SALA DE REUNION*****\n");
                     Console.ResetColor();
